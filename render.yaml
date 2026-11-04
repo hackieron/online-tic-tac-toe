@@ -1,1 +1,11 @@
-services:\n  - type: web\n    name: xo-arena\n    runtime: node\n    plan: free\n    buildCommand: npm install\n    startCommand: npm start\n    healthCheckPath: /health\n    envVars:\n      - key: NODE_ENV\n        value: production\n
+services:
+  - type: web
+    name: xo-arena
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
