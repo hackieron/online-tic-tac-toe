@@ -1,0 +1,1 @@
+FROM node:20-alpine\nWORKDIR /app\nCOPY package*.json ./\nRUN npm install --omit=dev\nCOPY . .\nENV NODE_ENV=production\nEXPOSE 3000\nCMD ["npm","start"]\n
